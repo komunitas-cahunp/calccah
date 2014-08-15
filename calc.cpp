@@ -49,6 +49,27 @@ main ()
 	Angka = Hasil;
 	break;
 
+	case '*' : cout << "Masukan Angka : ";
+	cin >> AngkaMasukan;
+	Hasil = Angka * AngkaMasukan;
+	cout << "Hasilnya adalah : " << Hasil << endl;
+	Angka = Hasil;
+	break;
+
+	case '/' : cout << "Masukan Angka : ";
+	cin >> AngkaMasukan;
+	Hasil = Angka / AngkaMasukan;
+	cout << "Hasilnya adalah : " << Hasil << endl;
+	Angka = Hasil;
+	break;
+
+	case '^' : cout << "Masukan Angka : ";
+	cin >> AngkaMasukan;
+	Hasil = pow(Angka,AngkaMasukan);
+	cout << "Hasilnya adalah : " << Hasil << endl;
+	Angka = Hasil;
+	break;
+
 	}
   cout << "Apakah penghitungan mau dilanjutkan(Y/T) \n";
   cin >> jwb;
@@ -65,5 +86,8 @@ void petunjuk()
   cout << "\tPROGRAM CALCULATOR SEDERHANA\t\t |\n";
   cout << "'+'= Penjumlahan  \t\t\t\t |\n";
   cout << "'-'= Pengurangan  \t\t\t\t |\n";
+  cout << "'*'= Perkalian    \t\t\t\t |\n";
+  cout << "'/'= Pembagian    \t\t\t\t |\n";
+  cout << "'^'= Perpangkatan \t\t\t\t |\n";
   cout << "=================================================+\n";
 }
